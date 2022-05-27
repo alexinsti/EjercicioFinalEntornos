@@ -40,12 +40,61 @@ public class HistorialTest {
      * Test of insertarResultado method, of class Historial.
      */
     @Test
-    public void testInsertarResultado() {
+    public void testInsertarResultado1() {
         System.out.println("insertarResultado");
         String ganador = "";
         int nivel = 0;
         Historial instance = new Historial();
         boolean expResult = false;
+        boolean result = instance.insertarResultado(ganador, nivel);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+    
+        /**
+     * Test of insertarResultado method, of class Historial.
+     */
+    @Test
+    public void testInsertarResultado2() {
+        System.out.println("insertarResultado");
+        String ganador = "";
+        int nivel = 1;
+        Historial instance = new Historial();
+        boolean expResult = true;
+        boolean result = instance.insertarResultado(ganador, nivel);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+        
+        /**
+     * Test of insertarResultado method, of class Historial.
+     */
+    @Test
+    public void testInsertarResultado3() {
+        System.out.println("insertarResultado");
+        String ganador = "";
+        int nivel = 2;
+        Historial instance = new Historial();
+        boolean expResult = true;
+        boolean result = instance.insertarResultado(ganador, nivel);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
+    
+        
+        /**
+     * Test of insertarResultado method, of class Historial.
+     */
+    @Test
+    public void testInsertarResultado4() {
+        System.out.println("insertarResultado");
+        String ganador = "";
+        int nivel = 3;
+        Historial instance = new Historial();
+        boolean expResult = true;
         boolean result = instance.insertarResultado(ganador, nivel);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
