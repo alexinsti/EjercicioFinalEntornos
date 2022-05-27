@@ -92,4 +92,113 @@ public class EjercicioFinalEntornosTest {
         //fail("The test case is a prototype.");
     }
     
+      /**
+     * Test of generaGanador method, of class EjercicioFinalEntornos.
+     */
+    @Test
+    public void testGeneraGanador_String_ArrayList2_1() {
+        System.out.println("generaGanador");
+        String jugada = "papel";
+        ArrayList<String> resultados = new ArrayList();
+        resultados.add("papel");
+        resultados.add("piedra");
+        resultados.add("tijeras");
+        String expResult = "Has perdido";
+        String result = EjercicioFinalEntornos.generaGanador(jugada, resultados);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+     /**
+     * Test of generaGanador method, of class EjercicioFinalEntornos.
+     */
+    @Test
+    public void testGeneraGanador_String_ArrayList2_2() {
+        System.out.println("generaGanador");
+        String jugada = "papel";
+        ArrayList<String> resultados = new ArrayList();
+        resultados.add("piedra");
+        resultados.add("piedra");
+        resultados.add("piedra");
+        String expResult = "Has ganado";
+        String result = EjercicioFinalEntornos.generaGanador(jugada, resultados);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+         /**
+     * Test of generaGanador method, of class EjercicioFinalEntornos.
+     */
+    @Test
+    public void testGeneraGanador_String_ArrayList2_3() {
+        System.out.println("generaGanador");
+        String jugada = "papel";
+        ArrayList<String> resultados = new ArrayList();
+        resultados.add("papel");
+        resultados.add("papel");
+        resultados.add("papel");
+        String expResult = "Empate";
+        String result = EjercicioFinalEntornos.generaGanador(jugada, resultados);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+     
+      /**
+     * Test of generaGanador method, of class EjercicioFinalEntornos.
+     */
+    @Test
+    public void testGeneraGanador_String_ArrayList3_1() {
+        System.out.println("generaGanador");
+        String jugada = "papel";
+        ArrayList<String> resultados = new ArrayList();
+        resultados.add("papel");
+        resultados.add("piedra");
+        resultados.add("tijeras");
+        String expResult = "Has perdido";
+        String result = EjercicioFinalEntornos.generaGanador(jugada, resultados);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+     /**
+     * Test of generaGanador method, of class EjercicioFinalEntornos.
+     */
+    @Test
+    public void testGeneraGanador_String_ArrayList3_2() {
+        System.out.println("generaGanador");
+        String jugada = "tijeras";
+        ArrayList<String> resultados = new ArrayList();
+        resultados.add("papel");
+        resultados.add("papel");
+        resultados.add("papel");
+        String expResult = "Has ganado";
+        String result = EjercicioFinalEntornos.generaGanador(jugada, resultados);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
+         /**
+     * Test of generaGanador method, of class EjercicioFinalEntornos.
+     */
+    @Test
+    public void testGeneraGanador_String_ArrayList3_3() {
+        System.out.println("generaGanador");
+        String jugada = "tijeras";
+        ArrayList<String> resultados = new ArrayList();
+        resultados.add("tijeras");
+        resultados.add("tijeras");
+        resultados.add("tijeras");
+        String expResult = "Empate";
+        String result = EjercicioFinalEntornos.generaGanador(jugada, resultados);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        //fail("The test case is a prototype.");
+    }
+    
 }
