@@ -45,7 +45,7 @@ public class EjercicioFinalEntornos {
     public static ArrayList<String> generaResultados(int nivel){
         ArrayList<String> resultados = new ArrayList();
         if(nivel>3)nivel=3;
-        for(int i=0; i<=nivel; i++){
+        for(int i=0; i<nivel; i++){
             resultados.add(generaTiradas());
         }
         System.out.println(resultados);
