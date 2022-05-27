@@ -42,7 +42,7 @@ public class HistorialTest {
     @Test
     public void testInsertarResultado1() {
         System.out.println("insertarResultado");
-        String ganador = "Has Ganado";
+        String ganador = "Empate";
         int nivel = 0;
         boolean expResult = false;
         boolean result = Historial.insertarResultado(ganador, nivel);
@@ -88,7 +88,7 @@ public class HistorialTest {
     @Test
     public void testInsertarResultado4() {
         System.out.println("insertarResultado");
-        String ganador = "Has perdido";
+        String ganador = "Empate";
         int nivel = 3;
         boolean expResult = true;
         boolean result = Historial.insertarResultado(ganador, nivel);
