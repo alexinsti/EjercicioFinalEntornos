@@ -12,8 +12,8 @@ import java.util.ArrayList;
  * @author alejandro
  */
 public class EjercicioFinalEntornos {
-    
-    public static void main(String[] args) {     
+
+    public static void main(String[] args) {           
         System.out.println(generaGanador("piedra", 3));
     }
     
@@ -38,7 +38,7 @@ public class EjercicioFinalEntornos {
         }else{
             ganador="Empate";
         }
-        
+        Historial.insertarResultado(ganador, nivel);
         return ganador;
     }
     public static String generaGanador(String jugada, ArrayList<String> resultados){

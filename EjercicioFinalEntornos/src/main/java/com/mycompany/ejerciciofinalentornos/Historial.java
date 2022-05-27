@@ -11,12 +11,12 @@ import java.util.ArrayList;
  * @author alejandro
  */
 public class Historial {
-    public ArrayList<String> historialNormal = new ArrayList();
-    public ArrayList<String> historialDificil = new ArrayList();
-    public ArrayList<String> historialMuyDificil = new ArrayList();
+    public static ArrayList<String> historialNormal = new ArrayList();
+    public static ArrayList<String> historialDificil = new ArrayList();
+    public static ArrayList<String> historialMuyDificil = new ArrayList();
     
     
-    public boolean insertarResultado(String ganador, int nivel){
+    public static boolean insertarResultado(String ganador, int nivel){
         String resultado="";
         boolean salida;
         
