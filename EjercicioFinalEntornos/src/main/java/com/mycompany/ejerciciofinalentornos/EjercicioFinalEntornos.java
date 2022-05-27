@@ -89,7 +89,7 @@ public class EjercicioFinalEntornos {
                 tirada="tijeras";
             }
         }while(valor==1);
-        System.out.println(tirada);
+        //System.out.println(tirada);
         
         return tirada;
     }
