@@ -205,7 +205,7 @@ public class EjercicioFinalEntornosTest {
      * Test of generaGanador method, of class EjercicioFinalEntornos.
      */
     @Test
-    public void testGeneraGanador_String_ArrayList3_3() {
+    public void testGeneraGanador_String_ArrayList4_1() {
         System.out.println("generaGanador");
         String jugada = "motosierra";
         ArrayList<String> resultados = new ArrayList();
