@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class EjercicioFinalEntornos {
     
     public static void main(String[] args) {     
-        System.out.println(generaGanador("piedra", 1));
+        System.out.println(generaGanador("piedra", 3));
     }
     
     public static String generaGanador(String jugada, int nivel){
@@ -25,15 +25,39 @@ public class EjercicioFinalEntornos {
             ganador="Tomatelo en serio";
         }else if("piedra".equalsIgnoreCase(jugada) && resultados.contains("papel")){
             ganador="Has perdido";
-        }else if("piedra".equalsIgnoreCase(jugada) && resultados.contains("tijeras")){
+        }else if("piedra".equalsIgnoreCase(jugada) && resultados.contains("tijeras") && (resultados.contains(jugada)==false)){
             ganador="Has ganado";
         }else if("papel".equalsIgnoreCase(jugada) && resultados.contains("tijeras")){
             ganador="Has perdido";
-        }else if("papel".equalsIgnoreCase(jugada) && resultados.contains("piedra")){
+        }else if("papel".equalsIgnoreCase(jugada) && resultados.contains("piedra") && (resultados.contains(jugada)==false)){
             ganador="Has ganado";
         }else if("tijeras".equalsIgnoreCase(jugada) && resultados.contains("piedra")){
             ganador="Has perdido";
-        }else if("tijeras".equalsIgnoreCase(jugada) && resultados.contains("papel")){
+        }else if("tijeras".equalsIgnoreCase(jugada) && resultados.contains("papel") && (resultados.contains(jugada)==false)){
+            ganador="Has ganado";
+        }else{
+            ganador="Empate";
+        }
+        
+        return ganador;
+    }
+    public static String generaGanador(String jugada, ArrayList<String> resultados){
+        String ganador="";
+        //ArrayList<String> resultados = generaResultados(nivel);
+        
+        if(("piedra".equalsIgnoreCase(jugada)==false)&&("papel".equalsIgnoreCase(jugada)==false)&&("tijeras".equalsIgnoreCase(jugada)==false)){
+            ganador="Tomatelo en serio";
+        }else if("piedra".equalsIgnoreCase(jugada) && resultados.contains("papel")){
+            ganador="Has perdido";
+        }else if("piedra".equalsIgnoreCase(jugada) && resultados.contains("tijeras") && (resultados.contains(jugada)==false)){
+            ganador="Has ganado";
+        }else if("papel".equalsIgnoreCase(jugada) && resultados.contains("tijeras")){
+            ganador="Has perdido";
+        }else if("papel".equalsIgnoreCase(jugada) && resultados.contains("piedra") && (resultados.contains(jugada)==false)){
+            ganador="Has ganado";
+        }else if("tijeras".equalsIgnoreCase(jugada) && resultados.contains("piedra")){
+            ganador="Has perdido";
+        }else if("tijeras".equalsIgnoreCase(jugada) && resultados.contains("papel") && (resultados.contains(jugada)==false)){
             ganador="Has ganado";
         }else{
             ganador="Empate";

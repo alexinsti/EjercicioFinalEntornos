@@ -20,23 +20,7 @@ public class EjercicioFinalEntornosTest {
     
     public EjercicioFinalEntornosTest() {
     }
-
-    @org.junit.jupiter.api.BeforeAll
-    public static void setUpClass() throws Exception {
-    }
-
-    @org.junit.jupiter.api.AfterAll
-    public static void tearDownClass() throws Exception {
-    }
-
-    @org.junit.jupiter.api.BeforeEach
-    public void setUp() throws Exception {
-    }
-
-    @org.junit.jupiter.api.AfterEach
-    public void tearDown() throws Exception {
-    }
-    /*
+    
     @BeforeAll
     public static void setUpClass() {
     }
@@ -52,59 +36,60 @@ public class EjercicioFinalEntornosTest {
     @AfterEach
     public void tearDown() {
     }
-*/
-    /**
-     * Test of main method, of class EjercicioFinalEntornos.
-     */
-    @org.junit.jupiter.api.Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        EjercicioFinalEntornos.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+
 
     /**
      * Test of generaGanador method, of class EjercicioFinalEntornos.
      */
-    @org.junit.jupiter.api.Test
-    public void testGeneraGanador() {
+    @Test
+    public void testGeneraGanador_String_ArrayList1_1() {
         System.out.println("generaGanador");
-        String jugada = "";
-        int nivel = 0;
-        String expResult = "";
-        String result = EjercicioFinalEntornos.generaGanador(jugada, nivel);
+        String jugada = "piedra";
+        ArrayList<String> resultados = new ArrayList();
+        resultados.add("papel");
+        resultados.add("piedra");
+        resultados.add("tijeras");
+        String expResult = "Has perdido";
+        String result = EjercicioFinalEntornos.generaGanador(jugada, resultados);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
-
-    /**
-     * Test of generaResultados method, of class EjercicioFinalEntornos.
+    
+     /**
+     * Test of generaGanador method, of class EjercicioFinalEntornos.
      */
-    @org.junit.jupiter.api.Test
-    public void testGeneraResultados() {
-        System.out.println("generaResultados");
-        int nivel = 0;
-        ArrayList<String> expResult = null;
-        ArrayList<String> result = EjercicioFinalEntornos.generaResultados(nivel);
+    @Test
+    public void testGeneraGanador_String_ArrayList1_2() {
+        System.out.println("generaGanador");
+        String jugada = "piedra";
+        ArrayList<String> resultados = new ArrayList();
+        resultados.add("tijeras");
+        resultados.add("tijeras");
+        resultados.add("tijeras");
+        String expResult = "Has ganado";
+        String result = EjercicioFinalEntornos.generaGanador(jugada, resultados);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
-
-    /**
-     * Test of generaTiradas method, of class EjercicioFinalEntornos.
+    
+         /**
+     * Test of generaGanador method, of class EjercicioFinalEntornos.
      */
-    @org.junit.jupiter.api.Test
-    public void testGeneraTiradas() {
-        System.out.println("generaTiradas");
-        String expResult = "";
-        String result = EjercicioFinalEntornos.generaTiradas();
+    @Test
+    public void testGeneraGanador_String_ArrayList1_3() {
+        System.out.println("generaGanador");
+        String jugada = "piedra";
+        ArrayList<String> resultados = new ArrayList();
+        resultados.add("tijeras");
+        resultados.add("piedra");
+        resultados.add("tijeras");
+        String expResult = "Empate";
+        String result = EjercicioFinalEntornos.generaGanador(jugada, resultados);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
