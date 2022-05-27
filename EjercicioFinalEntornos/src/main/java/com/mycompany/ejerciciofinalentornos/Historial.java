@@ -18,7 +18,7 @@ public class Historial {
     
     public boolean insertarResultado(String ganador, int nivel){
         String resultado="";
-        boolean salida=false;
+        boolean salida;
         
         switch (ganador) {
             case "Has perdido" -> resultado="Derrota";
