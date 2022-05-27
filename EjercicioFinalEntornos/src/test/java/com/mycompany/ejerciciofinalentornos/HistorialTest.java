@@ -44,9 +44,8 @@ public class HistorialTest {
         System.out.println("insertarResultado");
         String ganador = "";
         int nivel = 0;
-        Historial instance = new Historial();
         boolean expResult = false;
-        boolean result = instance.insertarResultado(ganador, nivel);
+        boolean result = Historial.insertarResultado(ganador, nivel);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -60,9 +59,8 @@ public class HistorialTest {
         System.out.println("insertarResultado");
         String ganador = "";
         int nivel = 1;
-        Historial instance = new Historial();
         boolean expResult = true;
-        boolean result = instance.insertarResultado(ganador, nivel);
+        boolean result = Historial.insertarResultado(ganador, nivel);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -76,9 +74,8 @@ public class HistorialTest {
         System.out.println("insertarResultado");
         String ganador = "";
         int nivel = 2;
-        Historial instance = new Historial();
         boolean expResult = true;
-        boolean result = instance.insertarResultado(ganador, nivel);
+        boolean result = Historial.insertarResultado(ganador, nivel);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
@@ -93,9 +90,8 @@ public class HistorialTest {
         System.out.println("insertarResultado");
         String ganador = "";
         int nivel = 3;
-        Historial instance = new Historial();
         boolean expResult = true;
-        boolean result = instance.insertarResultado(ganador, nivel);
+        boolean result = Historial.insertarResultado(ganador, nivel);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
         fail("The test case is a prototype.");
